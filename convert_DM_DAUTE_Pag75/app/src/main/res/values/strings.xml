@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Conversor de Unidades Basicas</string>
+    <string name="gramos">Gramos</string>
+    <string name="emp">-</string>
+    <string name="toneladas">Toneladas</string>
+    <string name="kilos">Kilos</string>
+    <string name="libras">Libras</string>
+    <string name="convertir">Convertir</string>
+    <string name="valor">Valor</string>
+    <string name="mil_metros">Milímetros</string>
+    <string name="centimetros">Centimetros</string>
+    <string name="metros">Metros</string>
+    <string name="kilometros">Kilometros</string>
+    <string name="celsius">Celsius</string>
+    <string name="kelvin">Kelvin</string>
+    <string name="fahrenheit">Fahrenheit</string>
+</resources>

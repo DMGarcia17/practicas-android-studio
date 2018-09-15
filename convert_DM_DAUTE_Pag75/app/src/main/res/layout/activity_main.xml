@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tbAll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/tab3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <Spinner
+                    android:id="@+id/spnTemp"
+                    android:layout_width="163dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:entries="@array/temp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.018" />
+
+                <EditText
+                    android:id="@+id/txtTemp"
+                    android:layout_width="145dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="@string/valor"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/spnTemp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.018" />
+
+                <Button
+                    android:id="@+id/btnCT"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/convertir"
+                    android:enabled="false"
+                    android:onClick="converT"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spnTemp" />
+
+                <TableLayout
+                    android:layout_width="344dp"
+                    android:layout_height="260dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnCT">
+
+                    <TableRow>
+
+                        <TextView android:text="@string/celsius" android:layout_marginEnd="40dp"/>
+
+                        <TextView
+                            android:id="@+id/tvCel"
+                            android:text="@string/emp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView android:text="@string/kelvin" />
+
+                        <TextView
+                            android:id="@+id/tvKel"
+                            android:text="@string/emp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView android:text="@string/fahrenheit" />
+
+                        <TextView
+                            android:id="@+id/tvFar"
+                            android:text="@string/emp" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/tab2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:id="@+id/spnLong"
+                    android:layout_width="177dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:entries="@array/lng"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.047"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.018" />
+
+                <EditText
+                    android:id="@+id/txtLong"
+                    android:layout_width="156dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="@string/valor"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/spnLong"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.018" />
+
+                <Button
+                    android:id="@+id/btnCL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="12dp"
+                    android:onClick="converL"
+                    android:text="@string/convertir"
+                    android:enabled="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spnLong" />
+
+                <TableLayout
+                    android:layout_width="344dp"
+                    android:layout_height="363dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnCL">
+
+                    <TableRow>
+
+                        <TextView android:text="@string/mil_metros" />
+
+                        <TextView
+                            android:id="@+id/tvMm"
+                            android:text="@string/emp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_marginEnd="20dp"
+                            android:text="@string/centimetros" />
+
+                        <TextView
+                            android:id="@+id/tvCm"
+                            android:text="@string/emp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView android:text="@string/metros" />
+
+                        <TextView
+                            android:id="@+id/tvM"
+                            android:text="@string/emp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView android:text="@string/kilometros" />
+
+                        <TextView
+                            android:id="@+id/tvKm"
+                            android:text="@string/emp" />
+                    </TableRow>
+
+                </TableLayout>
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/tab1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:id="@+id/spnUni"
+                    android:layout_width="163dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:entries="@array/uni"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.018" />
+
+                <EditText
+                    android:id="@+id/txtVal"
+                    android:layout_width="155dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:enabled="true"
+                    android:hint="@string/valor"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.2"
+                    app:layout_constraintStart_toEndOf="@+id/spnUni"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.018" />
+
+                <TableLayout
+                    android:id="@+id/tableLayout2"
+                    android:layout_width="344dp"
+                    android:layout_height="367dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:stretchColumns="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnCon"
+                    app:layout_constraintVertical_bias="0.046">
+
+                    <TableRow>
+
+                        <TextView android:text="@string/gramos" android:layout_marginEnd="40dp"/>
+
+                        <TextView
+                            android:id="@+id/tvG"
+                            android:text="@string/emp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView android:text="@string/libras" />
+
+                        <TextView
+                            android:id="@+id/tvL"
+                            android:text="@string/emp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView android:text="@string/kilos" />
+
+                        <TextView
+                            android:id="@+id/tvK"
+                            android:text="@string/emp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView android:text="@string/toneladas" />
+
+                        <TextView
+                            android:id="@+id/tvT"
+                            android:text="@string/emp" />
+                    </TableRow>
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/btnCon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="28dp"
+                    android:enabled="false"
+                    android:onClick="converP"
+                    android:text="@string/convertir"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spnUni" />
+            </android.support.constraint.ConstraintLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>
