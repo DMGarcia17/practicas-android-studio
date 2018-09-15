@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="lng">
-        <item>Milímetros</item>
-        <item>Centimetros</item>
-        <item>Metros</item>
-        <item>Kilometros</item>
-    </string-array>
-</resources>
