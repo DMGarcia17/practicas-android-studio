@@ -226,7 +226,6 @@ public class MainActivity extends AppCompatActivity {
 
                 tvFar.setText(String.valueOf(val));
                 tvCel.setText(String.valueOf(proc2(Double.parseDouble(proc4(val, 32)), Double.parseDouble(proc1(5, 9)))));
-                Toast.makeText(getApplicationContext(), proc4(val, 32), Toast.LENGTH_LONG).show();
                 tvKel.setText(proc3(Double.parseDouble(tvCel.getText().toString()), 273.15));
                 break;
         }

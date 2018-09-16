@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MenuActionBar_DM</string>
+    <string name="add">Add</string>
+    <string name="search">Search</string>
+    <string name="action_settings">Action Settings</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="n1">Seleccionaste la opcion agregar</string>
+    <string name="n2">Seleccionaste la opcion buscar</string>
+    <string name="n3">Seleccionaste la opcion editar</string>
+    <string name="n4">Seleccionaste la opcion eliminar</string>
+    <string name="n5">Seleccionaste la opcion de opciones</string>
+</resources>
