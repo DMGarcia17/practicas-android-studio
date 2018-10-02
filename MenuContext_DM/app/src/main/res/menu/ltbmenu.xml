@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ltbopc1"
+        android:title="@string/opcion_1_de_la_lista" />
+    <item
+        android:id="@+id/ltbopc2"
+        android:title="@string/opcion_2_de_la_lista" />
+</menu>

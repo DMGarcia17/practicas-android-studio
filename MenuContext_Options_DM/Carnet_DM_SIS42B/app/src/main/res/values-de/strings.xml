@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Carnet_DM_SIS42B</string>
+    <string name="name">Name</string>
+    <string name="language">Sprache:</string>
+    <string name="spanish">Deutsch</string>
+    <string name="name_val">Mike Wakozowski</string>
+    <string name="age">Alter:</string>
+    <string name="_21">21</string>
+</resources>

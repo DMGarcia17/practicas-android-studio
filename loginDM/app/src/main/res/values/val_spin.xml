@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="val_spin">
+        <item>Administrator</item>
+        <item>Support</item>
+        <item>Customer</item>
+    </string-array>
+</resources>

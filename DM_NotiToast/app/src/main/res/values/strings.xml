@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DM_NotiToast</string>
+    <string name="notificaciones_toast">Notificaciones Toast</string>
+    <string name="por_defecto">Por Defecto</string>
+    <string name="gravity">Gravity</string>
+    <string name="personalizado">Personalizado</string>
+    <string name="toast">Toast Personalizado</string>
+    <string name="def">Toast por Defecto</string>
+    <string name="gra">Toast con gravity</string>
+</resources>

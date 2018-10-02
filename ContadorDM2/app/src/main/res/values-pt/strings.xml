@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ContadorDM2</string>
+    <string name="logo_de_la_instituci_n">Logotipo da instituição</string>
+    <string name="text">Bem vindo</string>
+    <string name="textoBoton">Clique aqui</string>
+    <string name="res">Numero di clic:</string>
+</resources>

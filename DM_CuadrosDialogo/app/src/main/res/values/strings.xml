@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DM_CuadrosDialogo</string>
+    <string name="tipos_de_cuadros_de_dialogo">Tipos de cuadros de dialogo</string>
+    <string name="informativo">Informativo</string>
+    <string name="confirmaci_n">Confirmación</string>
+    <string name="multiple">Multiple</string>
+    <string name="personalizado">Personalizado</string>
+    <string name="texto_titulo">Texto Titulo</string>
+    <string name="texto_subtitulo">Texto Subtitulo</string>
+</resources>

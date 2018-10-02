@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MenuContext_DM</string>
+    <string name="opci_n_1">Opción 1</string>
+    <string name="opci_n_2">Opción 2</string>
+    <string name="opcion_2_de_la_lista">Opcion 2 de la lista</string>
+    <string name="opcion_1_de_la_lista">Opcion 1 de la lista</string>
+    <string name="re1">Etiqueta: Opcion 1 pulsada!</string>
+    <string name="re2">Etiqueta: Opcion 2 pulsada!</string>
 </resources>

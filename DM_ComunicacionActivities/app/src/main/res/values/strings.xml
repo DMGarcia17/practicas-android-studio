@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DM_ComunicacionActivities</string>
+    <string name="nombre">Nombre:</string>
+    <string name="verificar">Verificar</string>
+    <string name="resultado">Resultado</string>
+    <string name="acerca_de">Acerca De</string>
+    <string name="salir">Salir</string>
+</resources>

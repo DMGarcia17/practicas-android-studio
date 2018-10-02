@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ContadorDM2</string>
+    <string name="logo_de_la_instituci_n">Logo de la institución</string>
+    <string name="text">Bienvenido</string>
+    <string name="textoBoton">Clic Aqui</string>
+    <string name="res">Click número:</string>
+</resources>

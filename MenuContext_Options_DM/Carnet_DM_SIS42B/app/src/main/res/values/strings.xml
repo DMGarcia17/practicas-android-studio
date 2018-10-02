@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Carnet_DM_SIS42B</string>
+    <string name="name">Name:</string>
+    <string name="language">Language:</string>
+    <string name="spanish">Spanish</string>
+    <string name="name_val">Mike Wakozowski</string>
+    <string name="age">Age:</string>
+    <string name="_21">21</string>
+</resources>

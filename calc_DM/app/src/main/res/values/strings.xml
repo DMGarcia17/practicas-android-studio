@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculadora Basica</string>
+    <string name="c1">Cifra 1</string>
+    <string name="c2">Cifra 2</string>
+    <string name="c3">Opciones:</string>
+    <string name="divisi_n">División</string>
+    <string name="multiplicaci_n">Multiplicación</string>
+    <string name="resta">Resta</string>
+    <string name="suma">Suma</string>
+</resources>
